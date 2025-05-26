@@ -1,0 +1,127 @@
+body {
+  background: #fafafa;
+  font-family: 'Inter', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.list-section {
+  flex: 1 1 45%;
+  padding: 40px 30px 40px 40px;
+  background: #fff;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+}
+
+.app-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FF5A5F;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+
+.apartment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.apartment-card {
+  background: #f7f7f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  gap: 28px;
+  transition: transform 0.15s;
+}
+
+.apartment-card:hover {
+  transform: translateY(-5px) scale(1.015);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+}
+
+.apartment-img {
+  width: 145px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 2.5px solid #fff;
+}
+
+.apartment-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.apartment-info h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-btn {
+  background: linear-gradient(90deg, #FF5A5F 0%, #FC9D3C 100%);
+  color: #fff;
+  border: none;
+  padding: 11px 24px;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,90,95,0.11);
+  transition: background 0.25s;
+}
+.contact-btn:hover {
+  background: linear-gradient(90deg, #FC9D3C 0%, #FF5A5F 100%);
+}
+
+.contact-form {
+  background: #fff;
+  border: 1.5px solid #eee;
+  border-radius: 8px;
+  padding: 20px 20px 12px 20px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  resize: none;
+}
+
+.contact-form textarea {
+  height: 60px;
+  min-height: 40px;
+  max-height: 120px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.send-btn {
+  background: #FF5A5F;
+  color: #fff;
+  border: none;
+  padding: 
